@@ -113,36 +113,22 @@
 
   /* ---------- 3. CHOCOLATE PASSPORT DATA + RENDER ---------- */
   var passportStops = [
-    {name:"Cocoa Farm", country:"Côte d'Ivoire", value:"$0.006 / bar (illus.)", impact:"Land use, water for young trees", desc:"Smallholder farms cultivate Theobroma cacao under shade canopy, typically on 2–4 hectare plots.", icon:'<path d="M12 3c3 4 3 9 0 13-3-4-3-9 0-13Z" stroke="currentColor" stroke-width="1.4"/><path d="M12 16v5" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Harvest", country:"Ghana", value:"$0.01 / bar (illus.)", impact:"Manual labour intensive, seasonal", desc:"Ripe pods are cut by hand twice yearly and split open to remove the cocoa beans and pulp.", icon:'<path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.2"/>'},
-    {name:"Fermentation", country:"Côte d'Ivoire", value:"$0.02 / bar (illus.)", impact:"Methane from organic breakdown", desc:"Beans ferment in wooden boxes or banana-leaf heaps for 5–7 days, developing chocolate flavour precursors.", icon:'<path d="M7 4h10l-1 6a5 5 0 0 1-8 0L7 4Z" stroke="currentColor" stroke-width="1.4"/><path d="M9 20h6M12 15v5" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Drying", country:"Ghana", value:"$0.015 / bar (illus.)", impact:"Sun-dependent, low energy input", desc:"Beans are sun-dried on raised mats for 1–2 weeks, reducing moisture from ~60% to 7%.", icon:'<circle cx="12" cy="7" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M4 20c1-4 5-6 8-6s7 2 8 6" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Export", country:"Abidjan / Tema Ports", value:"$0.04 / bar (illus.)", impact:"Freight emissions, packaging jute", desc:"Dried beans are bagged, graded and shipped in bulk containers toward processing hubs in Europe and North America.", icon:'<path d="M3 15h18l-2 5H5l-2-5Z" stroke="currentColor" stroke-width="1.4"/><path d="M6 15V8h12v7" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Processing", country:"Netherlands", value:"$0.18 / bar (illus.)", impact:"High energy roasting &amp; grinding", desc:"Beans are roasted, winnowed and ground into cocoa liquor, then pressed into cocoa butter and cocoa powder.", icon:'<circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Manufacturing", country:"Belgium", value:"$0.55 / bar (illus.)", impact:"Milk &amp; sugar sourcing footprint", desc:"Cocoa mass is blended with sugar, milk solids and cocoa butter, conched and tempered into finished chocolate.", icon:'<rect x="4" y="7" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M8 7V5a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Packaging", country:"Germany", value:"$0.12 / bar (illus.)", impact:"Foil &amp; plastic laminate waste", desc:"Bars are wrapped in foil and branded cartons, often multi-material laminates that hinder recycling.", icon:'<rect x="5" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M5 10h14" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Shipping", country:"Transatlantic / EU Road", value:"$0.06 / bar (illus.)", impact:"Refrigerated transport emissions", desc:"Finished bars move by temperature-controlled sea and road freight to distribution centres worldwide.", icon:'<rect x="2" y="9" width="13" height="8" rx="1" stroke="currentColor" stroke-width="1.4"/><path d="M15 12h4l3 3v2h-7" stroke="currentColor" stroke-width="1.4"/><circle cx="7" cy="19" r="1.6" stroke="currentColor" stroke-width="1.4"/><circle cx="18" cy="19" r="1.6" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Retail", country:"USA / EU / India", value:"$1.9 shelf price (illus.)", impact:"Store energy, cold-chain for some lines", desc:"Bars reach supermarkets, convenience stores and e-commerce warehouses for final sale to consumers.", icon:'<path d="M4 8h16l-1.5 11a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 8Z" stroke="currentColor" stroke-width="1.4"/><path d="M8 8V6a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Consumer", country:"Global", value:"Final purchase", impact:"Personal choice point in the chain", desc:"The consumer unwraps and eats the bar — the single moment the entire trade chain was built to reach.", icon:'<path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.6-9.5 9-9.5 9Z" stroke="currentColor" stroke-width="1.4"/>'},
-    {name:"Recycling", country:"Waste Management Systems", value:"Recovery / disposal", impact:"Foil-paper laminate rarely recycled", desc:"Wrappers typically end up in landfill or incineration; only mono-material packaging enters formal recycling streams.", icon:'<path d="M7 7 3 12l4 5M17 7l4 5-4 5M14 4l-4 16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>'}
+    {name:"Cocoa Farm", country:"Côte d'Ivoire", value:"$0.006 / bar (illus.)", impact:"Land use, water for young trees", desc:"Smallholder farms cultivate Theobroma cacao under shade canopy, typically on 2–4 hectare plots.", icon:'<path d="M12 3c3 4 3 9 0 13-3-4-3-9 0-13Z" stroke="currentColor" stroke-width="1.4"/><path d="M12 16v5" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?cacao,tree,farm"},
+    {name:"Harvest", country:"Ghana", value:"$0.01 / bar (illus.)", impact:"Manual labour intensive, seasonal", desc:"Ripe pods are cut by hand twice yearly and split open to remove the cocoa beans and pulp.", icon:'<path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.2"/>', img:"https://source.unsplash.com/800x450/?cocoa,harvest,pods"},
+    {name:"Fermentation", country:"Côte d'Ivoire", value:"$0.02 / bar (illus.)", impact:"Methane from organic breakdown", desc:"Beans ferment in wooden boxes or banana-leaf heaps for 5–7 days, developing chocolate flavour precursors.", icon:'<path d="M7 4h10l-1 6a5 5 0 0 1-8 0L7 4Z" stroke="currentColor" stroke-width="1.4"/><path d="M9 20h6M12 15v5" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?cocoa,beans,fermentation"},
+    {name:"Drying", country:"Ghana", value:"$0.015 / bar (illus.)", impact:"Sun-dependent, low energy input", desc:"Beans are sun-dried on raised mats for 1–2 weeks, reducing moisture from ~60% to 7%.", icon:'<circle cx="12" cy="7" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M4 20c1-4 5-6 8-6s7 2 8 6" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?cocoa,beans,drying,sun"},
+    {name:"Export", country:"Abidjan / Tema Ports", value:"$0.04 / bar (illus.)", impact:"Freight emissions, packaging jute", desc:"Dried beans are bagged, graded and shipped in bulk containers toward processing hubs in Europe and North America.", icon:'<path d="M3 15h18l-2 5H5l-2-5Z" stroke="currentColor" stroke-width="1.4"/><path d="M6 15V8h12v7" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?shipping,port,containers"},
+    {name:"Processing", country:"Netherlands", value:"$0.18 / bar (illus.)", impact:"High energy roasting &amp; grinding", desc:"Beans are roasted, winnowed and ground into cocoa liquor, then pressed into cocoa butter and cocoa powder.", icon:'<circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?cocoa,roasting,factory"},
+    {name:"Manufacturing", country:"Belgium", value:"$0.55 / bar (illus.)", impact:"Milk &amp; sugar sourcing footprint", desc:"Cocoa mass is blended with sugar, milk solids and cocoa butter, conched and tempered into finished chocolate.", icon:'<rect x="4" y="7" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M8 7V5a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?chocolate,factory,production"},
+    {name:"Packaging", country:"Germany", value:"$0.12 / bar (illus.)", impact:"Foil &amp; plastic laminate waste", desc:"Bars are wrapped in foil and branded cartons, often multi-material laminates that hinder recycling.", icon:'<rect x="5" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M5 10h14" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?chocolate,wrapper,packaging"},
+    {name:"Shipping", country:"Transatlantic / EU Road", value:"$0.06 / bar (illus.)", impact:"Refrigerated transport emissions", desc:"Finished bars move by temperature-controlled sea and road freight to distribution centres worldwide.", icon:'<rect x="2" y="9" width="13" height="8" rx="1" stroke="currentColor" stroke-width="1.4"/><path d="M15 12h4l3 3v2h-7" stroke="currentColor" stroke-width="1.4"/><circle cx="7" cy="19" r="1.6" stroke="currentColor" stroke-width="1.4"/><circle cx="18" cy="19" r="1.6" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?cargo,truck,logistics"},
+    {name:"Retail", country:"USA / EU / India", value:"$1.9 shelf price (illus.)", impact:"Store energy, cold-chain for some lines", desc:"Bars reach supermarkets, convenience stores and e-commerce warehouses for final sale to consumers.", icon:'<path d="M4 8h16l-1.5 11a2 2 0 0 1-2 1.7H7.5a2 2 0 0 1-2-1.7L4 8Z" stroke="currentColor" stroke-width="1.4"/><path d="M8 8V6a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?supermarket,candy,aisle"},
+    {name:"Consumer", country:"Global", value:"Final purchase", impact:"Personal choice point in the chain", desc:"The consumer unwraps and eats the bar — the single moment the entire trade chain was built to reach.", icon:'<path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.6-9.5 9-9.5 9Z" stroke="currentColor" stroke-width="1.4"/>', img:"https://source.unsplash.com/800x450/?chocolate,bar,eating"},
+    {name:"Recycling", country:"Waste Management Systems", value:"Recovery / disposal", impact:"Foil-paper laminate rarely recycled", desc:"Wrappers typically end up in landfill or incineration; only mono-material packaging enters formal recycling streams.", icon:'<path d="M7 7 3 12l4 5M17 7l4 5-4 5M14 4l-4 16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>', img:"https://source.unsplash.com/800x450/?recycling,waste,plastic"}
   ];
 
   var track = document.getElementById('passportTrack');
   var fileBox = document.getElementById('passportFile');
-  var passportImageUrls = [
-    'https://loremflickr.com/900/180/cocoa,farm?lock=1',
-    'https://loremflickr.com/900/180/cocoa,harvest?lock=2',
-    'https://loremflickr.com/900/180/cocoa,fermentation?lock=3',
-    'https://loremflickr.com/900/180/cocoa,drying?lock=4',
-    'https://loremflickr.com/900/180/cargo,ship?lock=5',
-    'https://loremflickr.com/900/180/chocolate,factory?lock=6',
-    'https://loremflickr.com/900/180/chocolate,making?lock=7',
-    'https://loremflickr.com/900/180/chocolate,packaging?lock=8',
-    'https://loremflickr.com/900/180/freight,truck?lock=9',
-    'https://loremflickr.com/900/180/chocolate,store?lock=10',
-    'https://loremflickr.com/900/180/chocolate,consumer?lock=11',
-    'https://loremflickr.com/900/180/recycling,packaging?lock=12'
-  ];
   passportStops.forEach(function(stop, i){
     var btn = document.createElement('button');
     btn.className = 'pp-stop';
@@ -164,21 +150,17 @@
     });
     fileBox.innerHTML =
       '<div class="file-card">' +
+        '<div class="file-photo-wrap">' +
+          '<img class="file-photo" src="'+stop.img+'" alt="'+stop.name+' — illustrative photo" loading="lazy" ' +
+            'onerror="this.closest(\'.file-photo-wrap\').innerHTML=\'<div class=&quot;file-placeholder-img&quot;>Image unavailable — photo of: '+stop.name.toLowerCase()+'</div>\'">' +
+        '</div>' +
         '<h3>'+ (i+1) +'. '+ stop.name +'</h3>' +
         '<p class="file-desc">'+ stop.desc +'</p>' +
         '<div class="file-field"><span>Country / Region</span><strong>'+stop.country+'</strong></div>' +
         '<div class="file-field"><span>Trade Value Added</span><strong>'+stop.value+'</strong></div>' +
         '<div class="file-field"><span>Environmental Impact</span><strong>'+stop.impact+'</strong></div>' +
         '<div class="file-field"><span>Checkpoint Status</span><strong>Cleared &amp; Stamped</strong></div>' +
-        '<div class="file-image-wrap">' +
-          '<img class="file-image" src="'+passportImageUrls[i]+'" alt="'+stop.name+' in the chocolate supply chain" loading="lazy" referrerpolicy="no-referrer">' +
-        '</div>' +
       '</div>';
-
-    var image = fileBox.querySelector('.file-image');
-    image.addEventListener('error', function(){
-      image.closest('.file-image-wrap').innerHTML = '<p class="file-image-fallback">Image currently unavailable.</p>';
-    }, {once:true});
   }
   selectStop(0);
 
@@ -410,11 +392,11 @@
 
   /* ---------- 10. HIDDEN COSTS ---------- */
   var hiddenCosts = [
-    {title:"Child Labour", icon:'<path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.6-9.5 9-9.5 9Z" stroke="currentColor" stroke-width="1.4"/>', desc:"Informal labour practices remain a persistent risk in smallholder cocoa-growing regions with weak monitoring."},
-    {title:"Deforestation", icon:'<path d="M12 3v18M7 8c0 3 2 5 5 5s5-2 5-5c0-3-5-5-5-5s-5 2-5 5Z" stroke="currentColor" stroke-width="1.4"/>', desc:"Cocoa expansion has historically driven forest-margin conversion in parts of West Africa's growing belt."},
-    {title:"Climate Change", icon:'<circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1" stroke="currentColor" stroke-width="1.4"/>', desc:"Shifting rainfall patterns threaten long-term yield stability in traditional growing zones."},
-    {title:"Plastic Waste", icon:'<path d="M7 7 3 12l4 5M17 7l4 5-4 5M14 4l-4 16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>', desc:"Multi-material foil wrappers are difficult to recycle and often end up in landfill or incineration."},
-    {title:"Farmer Poverty", icon:'<path d="M12 3v18M7 8h6.5a2.5 2.5 0 0 1 0 5H8a2.5 2.5 0 0 0 0 5H16" stroke="currentColor" stroke-width="1.4"/>', desc:"Many cocoa-farming households earn below a living-income benchmark despite rising global demand."}
+    {title:"Child Labour", icon:'<path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.6-9.5 9-9.5 9Z" stroke="currentColor" stroke-width="1.4"/>', desc:"Informal labour practices remain a persistent risk in smallholder cocoa-growing regions with weak monitoring.", img:"https://source.unsplash.com/700x500/?farming,village,africa"},
+    {title:"Deforestation", icon:'<path d="M12 3v18M7 8c0 3 2 5 5 5s5-2 5-5c0-3-5-5-5-5s-5 2-5 5Z" stroke="currentColor" stroke-width="1.4"/>', desc:"Cocoa expansion has historically driven forest-margin conversion in parts of West Africa's growing belt.", img:"https://source.unsplash.com/700x500/?deforestation,forest,cleared"},
+    {title:"Climate Change", icon:'<circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1" stroke="currentColor" stroke-width="1.4"/>', desc:"Shifting rainfall patterns threaten long-term yield stability in traditional growing zones.", img:"https://source.unsplash.com/700x500/?drought,dry,cracked,land"},
+    {title:"Plastic Waste", icon:'<path d="M7 7 3 12l4 5M17 7l4 5-4 5M14 4l-4 16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>', desc:"Multi-material foil wrappers are difficult to recycle and often end up in landfill or incineration.", img:"https://source.unsplash.com/700x500/?plastic,waste,pollution"},
+    {title:"Farmer Poverty", icon:'<path d="M12 3v18M7 8h6.5a2.5 2.5 0 0 1 0 5H8a2.5 2.5 0 0 0 0 5H16" stroke="currentColor" stroke-width="1.4"/>', desc:"Many cocoa-farming households earn below a living-income benchmark despite rising global demand.", img:"https://source.unsplash.com/700x500/?farmer,field,rural,poverty"}
   ];
   (function renderHidden(){
     var grid = document.getElementById('hiddenGrid');
@@ -422,6 +404,10 @@
       var card = document.createElement('div');
       card.className = 'hc-card reveal';
       card.innerHTML =
+        '<div class="hc-photo-wrap">' +
+          '<img class="hc-photo" src="'+h.img+'" alt="" loading="lazy" ' +
+            'onerror="this.style.display=\'none\'">' +
+        '</div>' +
         '<span class="hc-icon"><svg viewBox="0 0 24 24" fill="none">'+h.icon+'</svg></span>' +
         '<h3>'+h.title+'</h3><p>'+h.desc+'</p>';
       grid.appendChild(card);
@@ -450,20 +436,9 @@
     }
     function onMove(clientX){ setPos(pctFromClientX(clientX)); }
 
-    handle.addEventListener('pointerdown', function(e){
-      if(e.button !== undefined && e.button !== 0){ return; }
-      dragging = true;
-      handle.setPointerCapture(e.pointerId);
-      onMove(e.clientX);
-      e.preventDefault();
-    });
+    handle.addEventListener('pointerdown', function(e){ dragging = true; handle.setPointerCapture(e.pointerId); });
     window.addEventListener('pointermove', function(e){ if(dragging) onMove(e.clientX); });
-    function stopDragging(e){
-      dragging = false;
-      if(e && handle.hasPointerCapture(e.pointerId)){ handle.releasePointerCapture(e.pointerId); }
-    }
-    window.addEventListener('pointerup', stopDragging);
-    window.addEventListener('pointercancel', stopDragging);
+    window.addEventListener('pointerup', function(){ dragging = false; });
 
     handle.addEventListener('keydown', function(e){
       var current = parseFloat(handle.getAttribute('aria-valuenow'));
