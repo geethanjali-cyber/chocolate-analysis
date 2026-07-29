@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bitter Truth Behind Sweet Trade — Global Trade Intelligence Portal</title>
+<meta name="description" content="An interactive trade intelligence report mapping the global footprint of chocolate — from cocoa farm to disposal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= SKIP LINK ================= -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <div class="portal-mark">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <circle cx="17" cy="17" r="16" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M17 4 L17 30 M4 17 L30 17" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+        <path d="M11 12c0-3 2.7-5.4 6-5.4s6 2.4 6 5.4-2.7 5.4-6 5.4-6-2.4-6-5.4Z" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M13 21h8v6h-8z" stroke="currentColor" stroke-width="1.4"/>
+      </svg>
+      <div class="portal-mark-text">
+        <span class="mark-eyebrow">Trade Intelligence &amp; Sustainability Division</span>
+        <span class="mark-title">Global Cocoa &amp; Chocolate Desk</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#passport">Passport</a>
+      <a href="#map">Trade Map</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#valuechain">Value Chain</a>
+      <a href="#footprint">Footprint</a>
+      <a href="#conclusion">Briefing</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#passport">Passport</a>
+    <a href="#map">Trade Map</a>
+    <a href="#ingredients">Ingredients</a>
+    <a href="#valuechain">Value Chain</a>
+    <a href="#footprint">Footprint</a>
+    <a href="#conclusion">Briefing</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= 1. HERO ================= -->
+<section class="hero" id="hero" aria-label="Introduction">
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="hero-map" id="heroMap" aria-hidden="true"></div>
+  <div class="hero-content">
+    <span class="doc-tag">CLASSIFICATION: PUBLIC BRIEFING · FILE NO. GTID‑2026‑CHOC‑01</span>
+    <h1 class="hero-title">The Bitter Truth<br><span>Behind Sweet Trade</span></h1>
+    <p class="hero-subtitle">Every chocolate bar tells a global story of trade, sustainability and hidden environmental costs.</p>
+    <p class="hero-sub2">Mapping the Global Footprint of Chocolate</p>
+    <div class="hero-actions">
+      <a href="#passport" class="btn btn-primary">Explore the Journey
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#snapshots" class="btn btn-ghost">Trade Dashboard</a>
+    </div>
+  </div>
+  <div class="hero-bar" aria-hidden="true">
+    <svg viewBox="0 0 220 90" width="180" height="74">
+      <rect x="2" y="2" width="216" height="86" rx="10" fill="#4a2c18" stroke="#D4A55D" stroke-width="1.5"/>
+      <g stroke="#2c1a0f" stroke-width="1.5">
+        <line x1="76" y1="2" x2="76" y2="88"/><line x1="150" y1="2" x2="150" y2="88"/>
+        <line x1="2" y1="46" x2="220" y2="46"/>
+      </g>
+    </svg>
+  </div>
+  <button class="scroll-cue" id="scrollCue" aria-label="Scroll to next section">
+    <span>Scroll</span>
+    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" aria-hidden="true"><rect x="1" y="1" width="12" height="20" rx="6" stroke="currentColor" stroke-width="1.2"/><circle cx="7" cy="6" r="1.6" fill="currentColor"/></svg>
+  </button>
+</section>
+
+<!-- ================= 2. PRODUCT SNAPSHOTS ================= -->
+<section class="snapshots" id="snapshots" aria-label="Key trade statistics">
+  <div class="section-head">
+    <span class="eyebrow">01 — At a Glance</span>
+    <h2>Product Snapshot</h2>
+    <p class="section-lede">Illustrative figures compiled from public trade reporting patterns, used here to demonstrate the scale of the global cocoa–chocolate trade.</p>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card" data-target="66" data-suffix="">
+      <span class="stat-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.4"/></svg>
+      </span>
+      <span class="stat-num">0</span>
+      <span class="stat-label">Countries in the trade network</span>
+    </div>
+    <div class="stat-card" data-target="130" data-suffix="B" data-prefix="$">
+      <span class="stat-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M7 7c0-2 2-3 5-3s5 1.4 5 3.4-2 3-5 3.6-5 1.6-5 3.6S9.5 18 12 18s5-1 5-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </span>
+      <span class="stat-num">0</span>
+      <span class="stat-label">Global chocolate trade value / yr</span>
+    </div>
+    <div class="stat-card" data-target="60" data-suffix="%">
+      <span class="stat-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 12c3-6 6-8 9-8s6 2 9 8c-3 6-6 8-9 8s-6-2-9-8Z" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.4"/></svg>
+      </span>
+      <span class="stat-num">0</span>
+      <span class="stat-label">Cocoa share from Côte d'Ivoire &amp; Ghana</span>
+    </div>
+    <div class="stat-card" data-target="4" data-suffix="">
+      <span class="stat-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 18h16M6 18V9l6-5 6 5v9" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="stat-num">0</span>
+      <span class="stat-label">Top importing blocs (EU, US, CH, India)</span>
+    </div>
+    <div class="stat-card" data-target="9000" data-suffix=" km">
+      <span class="stat-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" stroke="currentColor" stroke-width="1.4"/></svg>
+      </span>
+      <span class="stat-num">0</span>
+      <span class="stat-label">Avg. bean-to-bar travel distance</span>
+    </div>
+    <div class="stat-card" data-target="2.9" data-suffix=" kg" data-decimals="1">
+      <span class="stat-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 21c4-4 7-7.3 7-11a7 7 0 1 0-14 0c0 3.7 3 7 7 11Z" stroke="currentColor" stroke-width="1.4"/></svg>
+      </span>
+      <span class="stat-num">0</span>
+      <span class="stat-label">CO₂e per kg of chocolate produced</span>
+    </div>
+  </div>
+  <p class="illustrative-note">All figures on this page are illustrative approximations for academic demonstration and are labelled accordingly.</p>
+</section>
+
+<!-- ================= 3. CHOCOLATE PASSPORT ================= -->
+<section class="passport" id="passport" aria-label="The chocolate passport timeline">
+  <div class="section-head light">
+    <span class="eyebrow">02 — Traceability File</span>
+    <h2>The Chocolate Passport</h2>
+    <p class="section-lede">Twelve stamped checkpoints in the life of a chocolate bar. Select any stamp to open its file.</p>
+  </div>
+  <div class="passport-track-wrap">
+    <div class="passport-track" id="passportTrack" role="list">
+      <!-- stops injected by JS -->
+    </div>
+  </div>
+  <div class="passport-file" id="passportFile" aria-live="polite">
+    <p class="passport-placeholder">Select a checkpoint above to view its file.</p>
+  </div>
+</section>
+
+<!-- ================= 4. WORLD MAP ================= -->
+<section class="worldmap" id="map" aria-label="Interactive world trade map">
+  <div class="section-head">
+    <span class="eyebrow">03 — Trade Geography</span>
+    <h2>Where the Bar Travels</h2>
+    <p class="section-lede">Hover or tap a marked country to view its role in the cocoa–chocolate corridor.</p>
+  </div>
+  <div class="map-wrap">
+    <div class="map-svg-holder" id="mapSvgHolder"></div>
+    <div class="map-panel" id="mapPanel">
+      <p class="map-placeholder">Hover a highlighted country to view its trade profile.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. INGREDIENT EXPLORER ================= -->
+<section class="ingredients" id="ingredients" aria-label="Ingredient explorer">
+  <div class="section-head">
+    <span class="eyebrow">04 — Composition File</span>
+    <h2>Ingredient Explorer</h2>
+    <p class="section-lede">Flip each card to inspect origin, producers and footprint.</p>
+  </div>
+  <div class="ingredient-grid" id="ingredientGrid"></div>
+</section>
+
+<!-- ================= 6. GLOBAL VALUE CHAIN ================= -->
+<section class="valuechain" id="valuechain" aria-label="Global value chain">
+  <div class="section-head light">
+    <span class="eyebrow">05 — Where Value Goes</span>
+    <h2>Global Value Chain</h2>
+    <p class="section-lede">A flow of value from farm gate to shopping bag. Bar width is proportional to share of the final retail price.</p>
+  </div>
+  <div class="sankey" id="sankeyChart"></div>
+</section>
+
+<!-- ================= 7. ENVIRONMENTAL FOOTPRINT ================= -->
+<section class="footprint" id="footprint" aria-label="Environmental footprint dashboard">
+  <div class="section-head">
+    <span class="eyebrow">06 — Resource Ledger</span>
+    <h2>Environmental Footprint Dashboard</h2>
+    <p class="section-lede">Illustrative resource intensity per kilogram of finished chocolate.</p>
+  </div>
+  <div class="footprint-grid" id="footprintGrid"></div>
+</section>
+
+<!-- ================= 8. CARBON JOURNEY ================= -->
+<section class="carbon" id="carbon" aria-label="Carbon journey timeline">
+  <div class="section-head light">
+    <span class="eyebrow">07 — Emissions Trail</span>
+    <h2>The Carbon Journey</h2>
+    <p class="section-lede">Emissions, water and energy accumulate at every stage before the bar reaches your hand.</p>
+  </div>
+  <div class="carbon-timeline" id="carbonTimeline"></div>
+</section>
+
+<!-- ================= 9. WHO EARNS WHAT ================= -->
+<section class="earnings" id="earnings" aria-label="Value distribution across the supply chain">
+  <div class="section-head">
+    <span class="eyebrow">08 — Revenue Split</span>
+    <h2>Who Earns What?</h2>
+    <p class="section-lede">Illustrative share of a retail chocolate bar's price captured at each stage of the chain.</p>
+  </div>
+  <div class="bar-chart" id="earningsChart"></div>
+</section>
+
+<!-- ================= 10. HIDDEN COSTS ================= -->
+<section class="hidden-costs" id="hiddencosts" aria-label="Hidden costs of chocolate trade">
+  <div class="section-head dark">
+    <span class="eyebrow">09 — Off the Balance Sheet</span>
+    <h2>Hidden Costs</h2>
+    <p class="section-lede">Externalities that rarely appear on an invoice, but shape the entire industry.</p>
+  </div>
+  <div class="hidden-grid" id="hiddenGrid"></div>
+</section>
+
+<!-- ================= 11. SUSTAINABLE FUTURE ================= -->
+<section class="future" id="future" aria-label="Traditional versus sustainable chocolate comparison">
+  <div class="section-head">
+    <span class="eyebrow">10 — Policy Pathways</span>
+    <h2>A Sustainable Future</h2>
+    <p class="section-lede">Drag the divider to compare a traditional supply chain against a sustainable-certified one.</p>
+  </div>
+  <div class="compare-wrap">
+    <div class="compare-slider" id="compareSlider">
+      <div class="compare-side compare-traditional">
+        <h3>Traditional Chain</h3>
+        <ul>
+          <li><span>Carbon per kg</span><strong>2.9 kg CO₂e</strong></li>
+          <li><span>Farmer income share</span><strong>~6%</strong></li>
+          <li><span>Packaging</span><strong>Mixed plastics</strong></li>
+          <li><span>Transport</span><strong>Sea + long-haul road</strong></li>
+          <li><span>End-of-life recycling</span><strong>&lt; 15%</strong></li>
+        </ul>
+      </div>
+      <div class="compare-side compare-sustainable">
+        <h3>Sustainable Chain</h3>
+        <ul>
+          <li><span>Carbon per kg</span><strong>1.6 kg CO₂e</strong></li>
+          <li><span>Farmer income share</span><strong>~14%</strong></li>
+          <li><span>Packaging</span><strong>Compostable / mono-material</strong></li>
+          <li><span>Transport</span><strong>Consolidated sea freight</strong></li>
+          <li><span>End-of-life recycling</span><strong>&gt; 55%</strong></li>
+        </ul>
+      </div>
+      <div class="compare-handle" id="compareHandle" role="slider" aria-label="Compare traditional and sustainable chocolate" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+        <span class="handle-grip">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 4 2 8l4 4M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 12. TRADE ANALYST CONCLUSION ================= -->
+<section class="conclusion" id="conclusion" aria-label="Trade analyst briefing conclusion">
+  <div class="briefing-head">
+    <span class="eyebrow">11 — Final Briefing</span>
+    <h2>Trade Analyst Conclusion</h2>
+    <p class="briefing-meta">Prepared for the Government Trade Intelligence &amp; Sustainability Division · Distribution: Public</p>
+  </div>
+  <div class="briefing-grid">
+    <article class="briefing-card">
+      <h3><span aria-hidden="true">§1</span> Key Findings</h3>
+      <ul>
+        <li>Cocoa cultivation remains geographically concentrated, with West Africa supplying the majority of global raw bean volume while capturing a minority of final retail value.</li>
+        <li>Value addition is heavily weighted toward processing and manufacturing economies, widening the gap between origin and destination markets.</li>
+        <li>Transport and packaging together account for a significant share of the product's lifecycle carbon footprint.</li>
+        <li>Traceability remains inconsistent across the chain, complicating enforcement of labour and deforestation standards.</li>
+      </ul>
+    </article>
+    <article class="briefing-card">
+      <h3><span aria-hidden="true">§2</span> Recommendations</h3>
+      <ul>
+        <li>Incentivise in-origin processing capacity to shift a greater share of value addition toward producing nations.</li>
+        <li>Expand mandatory supply-chain traceability disclosures aligned with international deforestation-free trade requirements.</li>
+        <li>Support farmer cooperatives with direct trade financing to reduce dependency on volatile intermediary pricing.</li>
+        <li>Standardise mono-material and compostable packaging requirements across major importing markets.</li>
+      </ul>
+    </article>
+    <article class="briefing-card">
+      <h3><span aria-hidden="true">§3</span> Policy Suggestions</h3>
+      <ul>
+        <li>Tiered tariff relief for certified sustainable and traceable cocoa shipments.</li>
+        <li>Joint origin–destination cocoa price stabilisation mechanism to reduce farmer income volatility.</li>
+        <li>Cross-border carbon accounting standard specific to agri-food commodity chains.</li>
+      </ul>
+    </article>
+    <article class="briefing-card">
+      <h3><span aria-hidden="true">§4</span> Future Challenges</h3>
+      <ul>
+        <li>Climate variability in West African growing regions threatens medium-term yield stability.</li>
+        <li>Rising input costs may accelerate consolidation among smallholder farms.</li>
+        <li>Consumer demand for ethical sourcing is outpacing verifiable certification capacity.</li>
+      </ul>
+    </article>
+  </div>
+  <footer class="briefing-footer">
+    <p>Prepared by the Trade Analyst, Global Cocoa &amp; Chocolate Desk — for academic and illustrative purposes only. All statistics are approximated for classroom demonstration.</p>
+  </footer>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Government Trade Intelligence Portal (Concept) — University Assignment Prototype. Data is illustrative and not sourced from an official register.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
