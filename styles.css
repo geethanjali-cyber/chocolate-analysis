@@ -248,16 +248,6 @@ section{ position:relative; padding: clamp(4rem, 8vw, 7rem) 0; overflow:hidden; 
 .file-field{ }
 .file-field span{ display:block; font-family: var(--font-mono); font-size:.68rem; text-transform:uppercase; letter-spacing:.08em; color: var(--gold-cocoa); margin-bottom:.3rem; }
 .file-field strong{ font-weight:600; color:#fff; font-size:.95rem; }
-.file-image-wrap{
-  grid-column:1 / -1; overflow:hidden; border-radius:var(--radius-s);
-  border:1px solid rgba(212,165,93,.35); background:rgba(255,255,255,.06);
-}
-.file-image{ width:100%; height:auto; display:block; }
-.file-image-fallback{
-  min-height:90px; margin:0; display:flex; align-items:center; justify-content:center;
-  color:rgba(255,255,255,.6); font-family:var(--font-mono); font-size:.72rem;
-}
-
 /* =========================================================
    4. WORLD MAP
    ========================================================= */
